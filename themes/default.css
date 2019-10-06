@@ -3,21 +3,22 @@
 * {
     background-color: #333344;
     font-family: 'Merriweather', serif;
+    font-size: 16px;
 }
 
 #page {
     color: #FFFFFF;
-    font-size: 16px;
 }
 
+input {
+    color: #00FFFF;
+}
 p {
     color: #00FFFF;
-    font-size: 16px;
 }
 
 span {
     color: #00FFFF;
-    font-size: 16px;
 }
 
 #page::placeholder {
