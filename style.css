@@ -1,6 +1,4 @@
-* {
-    background-color: #333344;
-  }
+
   
   html, body {
     height: 100%;
@@ -9,16 +7,6 @@
   
   *:focus {
       outline: none;
-  }
-  
-  p {
-    color: #00FFFF;
-    font-size: 20px;
-  }
-  
-  span {
-    color: #00FFFF;
-    font-size: 20px;
   }
   
   #commandprompt {
@@ -49,21 +37,10 @@
     width: 100px;
   }
   
-  #page::placeholder {
-    color: #FFFFFF;
-    opacity: .5; /* Firefox */
-  }
-  
-  #commandprompt::placeholder {
-    color: #00FFFF;
-    opacity: 1;
-  }
-  
   #page {
     
     width: 60%;
     height: 60%;
-    color: #FFFFFF;
     border: none;
     resize: none;
     display: block;

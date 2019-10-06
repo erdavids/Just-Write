@@ -1,0 +1,27 @@
+* {
+    background-color: #333344;
+}
+
+#page {
+    color: #FFFFFF;
+}
+
+p {
+    color: #00FFFF;
+    font-size: 20px;
+}
+
+span {
+    color: #00FFFF;
+    font-size: 20px;
+}
+
+#page::placeholder {
+    color: #FFFFFF;
+    opacity: .5; /* Firefox */
+  }
+  
+  #commandprompt::placeholder {
+    color: #00FFFF;
+    opacity: 1;
+  }
