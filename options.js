@@ -13,7 +13,7 @@ function executeCommand(e) {
         download()
     } else if (test[0].toLowerCase() === 'reset') {
         reset()
-    } else if (test[0].toLowerCase() === 'source') {
+    } else if (test[0].toLowerCase() === 'contribute') {
         window.open('https://github.com/erdavids/Just-Write','_blank','noopener')
     }
 }
