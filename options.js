@@ -6,14 +6,14 @@ commandprompt.addEventListener("keydown", function (e) {
 });
 
 function executeCommand(e) {
-    var test = document.getElementById('commandprompt').value
+    var test = document.getElementById('commandprompt').value.split(' ')
     document.getElementById('commandprompt').value = ""
-        
-    if (test === 'save') {
+    
+    if (test[0].toLowerCase() === 'save' ) {
         download()
-    } else if (test === 'reset') {
+    } else if (test[0].toLowerCase() === 'reset') {
         reset()
-    } else if (test === 'source') {
+    } else if (test[0].toLowerCase() === 'source') {
         window.open('https://github.com/erdavids/Just-Write','_blank','noopener')
     }
 }
