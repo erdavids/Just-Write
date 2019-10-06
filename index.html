@@ -48,6 +48,8 @@
                     
                 if (test === 'save') {
                     download()
+                } else if (test === 'reset') {
+                    reset()
                 }
             }
 
@@ -76,6 +78,10 @@
                 document.body.appendChild(anchor);
                 anchor.click();
                 document.body.removeChild(anchor);
+            }
+
+            function reset() {
+                document.getElementById("page").value = ""
             }
         
         </script>
