@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 * {
     background-color: #333344;
-    font-family: 'Poppins';
+    font-family: 'Merriweather', serif;
 }
 
 #page {
