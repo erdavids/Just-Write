@@ -15,6 +15,8 @@ function executeCommand(e) {
         reset()
     } else if (test[0].toLowerCase() === 'contribute') {
         window.open('https://github.com/erdavids/Just-Write','_blank','noopener')
+    } else if (test[0].toLowerCase() === 'help') {
+        window.open('https://github.com/erdavids/Just-Write/blob/master/GUIDE.md','_blank','noopener')
     }
 }
 
@@ -26,6 +28,10 @@ function updateMetrics() {
     
     if (text) {
         document.getElementById("wordcount").textContent = text.split(' ').length + ' words'
+
+        var minutes = String(parseInt(len/240.0))
+     
+        document.getElementById("readtime").textContent = minutes + ' min read'
     } else {
         document.getElementById("wordcount").textContent = "0 words"
     }
