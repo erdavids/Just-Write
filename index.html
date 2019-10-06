@@ -28,19 +28,32 @@
         
         <script>
         
-        var wage = document.getElementById("commandprompt");
-        wage.addEventListener("keydown", function (e) {
-            if (e.keyCode === 13) {
-                validate(e);
-            }
-        });
-        
-        function validate(e) {
-        var test = document.getElementById('commandprompt').value
-        document.getElementById('commandprompt').value = ""
+            var commandprompt = document.getElementById("commandprompt");
+            commandprompt.addEventListener("keydown", function (e) {
+                if (e.keyCode === 13) {
+                    executeCommand(e);
+                }
+            });
             
-        console.log(test)
-        }
+            function executeCommand(e) {
+                var test = document.getElementById('commandprompt').value
+                document.getElementById('commandprompt').value = ""
+                    
+                console.log(test)
+            }
+
+            var updateMetrics = setInterval(myTimer, 4000);
+
+            function updateMetrics() {
+                var text = document.getElementById("page").value;
+                console.log(text);
+                
+                if (text) {
+                    document.getElementById("wordcount").textContent = text.split(' ').length + ' words'
+                } else {
+                    document.getElementById("wordcount").textContent = "0 words"
+                }
+            }
         
         </script>
         

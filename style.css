@@ -46,6 +46,7 @@
     color: #00FFFF;
     font-size: 22px;
     border: 0;
+    width: 100px;
   }
   
   #page::placeholder {
