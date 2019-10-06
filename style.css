@@ -53,9 +53,14 @@
     border: 0;
   }
   
-  ::placeholder { 
+  #page::placeholder {
+    color: #FFFFFF;
+    opacity: .5; /* Firefox */
+  }
+  
+  #commandprompt::placeholder {
     color: #00FFFF;
-    opacity: 1; /* Firefox */
+    opacity: 1;
   }
   
   #page {
