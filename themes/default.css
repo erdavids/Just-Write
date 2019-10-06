@@ -7,17 +7,17 @@
 
 #page {
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 p {
     color: #00FFFF;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 span {
     color: #00FFFF;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #page::placeholder {
