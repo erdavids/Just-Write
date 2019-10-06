@@ -10,7 +10,7 @@ function executeCommand(e) {
     document.getElementById('commandprompt').value = ""
     
     if (test[0].toLowerCase() === 'save' ) {
-        download()
+        download(test[1])
     } else if (test[0].toLowerCase() === 'reset') {
         reset()
     } else if (test[0].toLowerCase() === 'contribute') {
@@ -37,12 +37,16 @@ function updateMetrics() {
     }
 }
 
-function download(){
+function download(filename){
     var text = document.getElementById("page").value;
     text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
     var blob = new Blob([text], { type: "text/plain"});
     var anchor = document.createElement("a");
-    anchor.download = "my-filename.txt";
+    if (filename) {
+        anchor.download = filename;
+    } else {
+        anchor.download = "justwritefile.txt"
+    }
     anchor.href = window.URL.createObjectURL(blob);
     anchor.target ="_blank";
     anchor.style.display = "none"; // just to be safe!
