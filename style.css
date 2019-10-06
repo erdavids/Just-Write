@@ -1,0 +1,74 @@
+* {
+    background-color: #333344;
+  }
+  
+  html, body {
+      height: 100%;
+  }
+  
+  *:focus {
+      outline: none;
+  }
+  
+  p {
+    color: #00FFFF;
+    font-size: 20px;
+  }
+  
+  span {
+    color: #00FFFF;
+    font-size: 20px;
+  }
+  
+  #commandprompt {
+    position: fixed;
+    bottom: 5%;
+    left: 1%;
+  }
+  
+  #bottomright {
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+   
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+  
+  
+  input {
+    color: #00FFFF;
+    font-size: 22px;
+    border: 0;
+  }
+  
+  ::placeholder { 
+    color: #00FFFF;
+    opacity: 1; /* Firefox */
+  }
+  
+  #page {
+    
+    width: 60%;
+    height: 100%;
+    color: #FFFFFF;
+    border: none;
+    resize: none;
+    placeholder: "Hey";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
+    outline: none;
+  }
