@@ -1,8 +1,12 @@
 # Just Write
 
-A simple, minimalistic text editor with computer terminal styled interaction. Choose your favorite theme and enjoy the writing process. Everything is out of the way so you can focus and **just write**.
+An open-source minimalistic text editor with computer terminal styled interaction. The site is designed to help you forget everything else and **just write**.
 
-Chase your wordcount at [justwrite.io](https://justwrite.io)
+ [justwrite.io](https://justwrite.io)
+ 
+## Mentality
+
+This project was created as a personal project that champions a successful writing mentality. No matter the goal or circumanstances, when it comes to writing the most important thing is always to sit down and **just write**. As long as you are willing to put in the time and effort, eventually you come across the words you've been looking for.
 
 ## Usage
 
