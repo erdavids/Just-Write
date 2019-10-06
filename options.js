@@ -13,6 +13,8 @@ function executeCommand(e) {
         download()
     } else if (test === 'reset') {
         reset()
+    } else if (test === 'source') {
+        window.open('https://github.com/erdavids/Just-Write','_blank','noopener')
     }
 }
 
