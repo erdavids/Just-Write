@@ -4,6 +4,7 @@
   
   html, body {
       height: 100%;
+      overflow-y: hidden;
   }
   
   *:focus {
@@ -70,7 +71,6 @@
     color: #FFFFFF;
     border: none;
     resize: none;
-    placeholder: "Hey";
     display: block;
     margin-left: auto;
     margin-right: auto;
