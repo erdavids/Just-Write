@@ -1,4 +1,4 @@
-var commandprompt = document.getElementById("commandprompt");
+var commandprompt = document.getElementById("cp");
 commandprompt.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
         executeCommand(e);
@@ -6,8 +6,8 @@ commandprompt.addEventListener("keydown", function (e) {
 });
 
 function executeCommand(e) {
-    var test = document.getElementById('commandprompt').value.split(' ')
-    document.getElementById('commandprompt').value = ""
+    var test = document.getElementById('cp').value.split(' ')
+    document.getElementById('cp').value = ""
     
     if (test[0].toLowerCase() === 'save' ) {
         download(test[1])
@@ -28,7 +28,7 @@ function updateMetrics() {
     
     if (text) {
         var len = text.split(' ').length
-        
+
         document.getElementById("wordcount").textContent = len + ' words'
 
         var minutes = String(parseInt(len/240.0))
