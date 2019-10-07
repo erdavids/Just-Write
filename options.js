@@ -27,7 +27,9 @@ function updateMetrics() {
     console.log(text);
     
     if (text) {
-        document.getElementById("wordcount").textContent = text.split(' ').length + ' words'
+        var len = text.split(' ').length
+        
+        document.getElementById("wordcount").textContent = len + ' words'
 
         var minutes = String(parseInt(len/240.0))
      
