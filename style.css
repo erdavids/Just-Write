@@ -37,7 +37,7 @@ input {
   }
   
   #page {
-    
+    line-height: 1.6;
     width: 50%;
     height: 100%;
     border: none;
